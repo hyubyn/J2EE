@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="models.Questions" table="Question">
+        <id name="qid" type="integer" column="qid">
+            <generator class="assigned"/>
+        </id>
+        <property name="cid" type="integer">
+            <column name="cid"/>
+        </property>
+        <property name="questionType" type="string">
+            <column name="question_type"/>
+        </property>
+        <property name="questionName" type="string">
+            <column name="question_name"/>
+        </property>
+        <property name="questionPosition" type="string">
+            <column name="question_position"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="models.CampaignRating" table="CampaignRating">
+        <id name="crid" type="integer" column="crid">
+            <generator class="assigned"/>
+        </id>
+        <property name="cid" type="integer">
+            <column name="cid"/>
+        </property>
+        <property name="uid" type="integer">
+            <column name="uid"/>
+        </property>
+        <property name="rate" type="integer">
+            <column name="rate"/>
+        </property>
+    </class>
+</hibernate-mapping>

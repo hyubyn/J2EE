@@ -13,110 +13,111 @@ public class User implements java.io.Serializable{
     public User(){
     }
     
-    private int _id;
-    private String _name;
-    private String _email;
-    private String _password;
-    private String _address;
-    private String _sex;
-    private String _birthday;
-    
+    private int id;
+    private String name;
+    private String email;
+    private String password;
+    private String address;
+    private String sex;
+    private String birthday;
 
     /**
-     * @return the _name
-     */
-    public String getName() {
-        return _name;
-    }
-
-    /**
-     * @param _name the _name to set
-     */
-    public void setName(String _name) {
-        this._name = _name;
-    }
-
-    /**
-     * @return the _email
-     */
-    public String getEmail() {
-        return _email;
-    }
-
-    /**
-     * @param _email the _email to set
-     */
-    public void setEmail(String _email) {
-        this._email = _email;
-    }
-
-    /**
-     * @return the _password
-     */
-    public String getPassword() {
-        return _password;
-    }
-
-    /**
-     * @param _password the _password to set
-     */
-    public void setPassword(String _password) {
-        this._password = _password;
-    }
-
-    /**
-     * @return the _address
-     */
-    public String getAddress() {
-        return _address;
-    }
-
-    /**
-     * @param _address the _address to set
-     */
-    public void setAddress(String _address) {
-        this._address = _address;
-    }
-
-    /**
-     * @return the _sex
-     */
-    public String getSex() {
-        return _sex;
-    }
-
-    /**
-     * @param _sex the _sex to set
-     */
-    public void setSex(String _sex) {
-        this._sex = _sex;
-    }
-
-    /**
-     * @return the _birthday
-     */
-    public String getBirthday() {
-        return _birthday;
-    }
-
-    /**
-     * @param _birthday the _birthday to set
-     */
-    public void setBirthday(String _birthday) {
-        this._birthday = _birthday;
-    }
-
-    /**
-     * @return the _id
+     * @return the id
      */
     public int getId() {
-        return _id;
+        return id;
     }
 
     /**
-     * @param _id the _id to set
+     * @param id the id to set
      */
-    public void setId(int _id) {
-        this._id = _id;
+    public void setId(int id) {
+        this.id = id;
     }
+
+    /**
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * @param name the name to set
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * @return the email
+     */
+    public String getEmail() {
+        return email;
+    }
+
+    /**
+     * @param email the email to set
+     */
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    /**
+     * @return the password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * @param password the password to set
+     */
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    /**
+     * @return the address
+     */
+    public String getAddress() {
+        return address;
+    }
+
+    /**
+     * @param address the address to set
+     */
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    /**
+     * @return the sex
+     */
+    public String getSex() {
+        return sex;
+    }
+
+    /**
+     * @param sex the sex to set
+     */
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    /**
+     * @return the birthday
+     */
+    public String getBirthday() {
+        return birthday;
+    }
+
+    /**
+     * @param birthday the birthday to set
+     */
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
+    }
+    
+
 }

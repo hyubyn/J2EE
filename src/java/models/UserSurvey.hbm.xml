@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="models.UserSurvey" table="User_Survey">
+        <id name="usid" type="integer" column="usid">
+            <generator class="assigned"/>
+        </id>
+        <property name="uid" type="integer">
+            <column name="uid"/>
+        </property>
+        <property name="scid" type="integer">
+            <column name="scid" />
+        </property>
+        <property name="numberQuestions" type="integer">
+            <column name="number_question"/>
+        </property>
+        <property name="numberAnswered" type="integer">
+            <column name="number_answered" />
+        </property>
+        <property name="surveyTime" type="datetime">
+            <column name="survey_time"/>
+        </property>
+        
+    </class>
+</hibernate-mapping>

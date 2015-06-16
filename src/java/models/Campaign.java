@@ -15,141 +15,142 @@ public class Campaign implements java.io.Serializable{
     public Campaign(){
     }
     
-    private int _cid;
-    private int _uid;
-    private String _campaignTitle;
-    private Date _postTime;
-    private Date _startTime;
-    private Date _endTime;
-    private String _campaignAge;
-    private String _campaignGender;
-    private String _campaignLocation;
+    private int cid;
+    private int uid;
+    private String campaignTitle;
+    private Date postTime;
+    private Date startTime;
+    private Date endTime;
+    private String campaignAge;
+    private String campaignGender;
+    private String campaignLocation;
 
     /**
-     * @return the _cid
+     * @return the cid
      */
     public int getCid() {
-        return _cid;
+        return cid;
     }
 
     /**
-     * @param _cid the _cid to set
+     * @param cid the cid to set
      */
-    public void setCid(int _cid) {
-        this._cid = _cid;
+    public void setCid(int cid) {
+        this.cid = cid;
     }
 
     /**
-     * @return the _uid
+     * @return the uid
      */
     public int getUid() {
-        return _uid;
+        return uid;
     }
 
     /**
-     * @param _uid the _uid to set
+     * @param uid the uid to set
      */
-    public void setUid(int _uid) {
-        this._uid = _uid;
+    public void setUid(int uid) {
+        this.uid = uid;
     }
 
     /**
-     * @return the _campaignTitle
+     * @return the campaignTitle
      */
     public String getCampaignTitle() {
-        return _campaignTitle;
+        return campaignTitle;
     }
 
     /**
-     * @param _campaignTitle the _campaignTitle to set
+     * @param campaignTitle the campaignTitle to set
      */
-    public void setCampaignTitle(String _campaignTitle) {
-        this._campaignTitle = _campaignTitle;
+    public void setCampaignTitle(String campaignTitle) {
+        this.campaignTitle = campaignTitle;
     }
 
     /**
-     * @return the _postTime
+     * @return the postTime
      */
     public Date getPostTime() {
-        return _postTime;
+        return postTime;
     }
 
     /**
-     * @param _postTime the _postTime to set
+     * @param postTime the postTime to set
      */
-    public void setPostTime(Date _postTime) {
-        this._postTime = _postTime;
+    public void setPostTime(Date postTime) {
+        this.postTime = postTime;
     }
 
     /**
-     * @return the _startTime
+     * @return the startTime
      */
     public Date getStartTime() {
-        return _startTime;
+        return startTime;
     }
 
     /**
-     * @param _startTime the _startTime to set
+     * @param startTime the startTime to set
      */
-    public void setStartTime(Date _startTime) {
-        this._startTime = _startTime;
+    public void setStartTime(Date startTime) {
+        this.startTime = startTime;
     }
 
     /**
-     * @return the _endTime
+     * @return the endTime
      */
     public Date getEndTime() {
-        return _endTime;
+        return endTime;
     }
 
     /**
-     * @param _endTime the _endTime to set
+     * @param endTime the endTime to set
      */
-    public void setEndTime(Date _endTime) {
-        this._endTime = _endTime;
+    public void setEndTime(Date endTime) {
+        this.endTime = endTime;
     }
 
     /**
-     * @return the _campaignAge
+     * @return the campaignAge
      */
     public String getCampaignAge() {
-        return _campaignAge;
+        return campaignAge;
     }
 
     /**
-     * @param _campaignAge the _campaignAge to set
+     * @param campaignAge the campaignAge to set
      */
-    public void setCampaignAge(String _campaignAge) {
-        this._campaignAge = _campaignAge;
+    public void setCampaignAge(String campaignAge) {
+        this.campaignAge = campaignAge;
     }
 
     /**
-     * @return the _campaignGender
+     * @return the campaignGender
      */
     public String getCampaignGender() {
-        return _campaignGender;
+        return campaignGender;
     }
 
     /**
-     * @param _campaignGender the _campaignGender to set
+     * @param campaignGender the campaignGender to set
      */
-    public void setCampaignGender(String _campaignGender) {
-        this._campaignGender = _campaignGender;
+    public void setCampaignGender(String campaignGender) {
+        this.campaignGender = campaignGender;
     }
 
     /**
-     * @return the _campaignLocation
+     * @return the campaignLocation
      */
     public String getCampaignLocation() {
-        return _campaignLocation;
+        return campaignLocation;
     }
 
     /**
-     * @param _campaignLocation the _campaignLocation to set
+     * @param campaignLocation the campaignLocation to set
      */
-    public void setCampaignLocation(String _campaignLocation) {
-        this._campaignLocation = _campaignLocation;
+    public void setCampaignLocation(String campaignLocation) {
+        this.campaignLocation = campaignLocation;
     }
 
+   
    
 }

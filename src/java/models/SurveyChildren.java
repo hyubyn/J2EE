@@ -15,124 +15,126 @@ public class SurveyChildren {
     
     }
     
-    private int _scid;
-    private int _sid;
-    private String _surveyChildName;
-    private String _surveyChildDescription;
-    private String _surveyChildCreated;
-    private String _surveyChildModified;
-    private String _surveyChildPosition;
-    private String _surveyChildStatus;
+    private int scid;
+    private int sid;
+    private String surveyChildName;
+    private String surveyChildDescription;
+    private String surveyChildCreated;
+    private String surveyChildModified;
+    private String surveyChildPosition;
+    private String surveyChildStatus;
 
     /**
-     * @return the _scid
+     * @return the scid
      */
     public int getScid() {
-        return _scid;
+        return scid;
     }
 
     /**
-     * @param _scid the _scid to set
+     * @param scid the scid to set
      */
-    public void setScid(int _scid) {
-        this._scid = _scid;
+    public void setScid(int scid) {
+        this.scid = scid;
     }
 
     /**
-     * @return the _sid
+     * @return the sid
      */
     public int getSid() {
-        return _sid;
+        return sid;
     }
 
     /**
-     * @param _sid the _sid to set
+     * @param sid the sid to set
      */
-    public void setSid(int _sid) {
-        this._sid = _sid;
+    public void setSid(int sid) {
+        this.sid = sid;
     }
 
     /**
-     * @return the _surveyChildName
+     * @return the surveyChildName
      */
     public String getSurveyChildName() {
-        return _surveyChildName;
+        return surveyChildName;
     }
 
     /**
-     * @param _surveyChildName the _surveyChildName to set
+     * @param surveyChildName the surveyChildName to set
      */
-    public void setSurveyChildName(String _surveyChildName) {
-        this._surveyChildName = _surveyChildName;
+    public void setSurveyChildName(String surveyChildName) {
+        this.surveyChildName = surveyChildName;
     }
 
     /**
-     * @return the _surveyChildDescription
+     * @return the surveyChildDescription
      */
     public String getSurveyChildDescription() {
-        return _surveyChildDescription;
+        return surveyChildDescription;
     }
 
     /**
-     * @param _surveyChildDescription the _surveyChildDescription to set
+     * @param surveyChildDescription the surveyChildDescription to set
      */
-    public void setSurveyChildDescription(String _surveyChildDescription) {
-        this._surveyChildDescription = _surveyChildDescription;
+    public void setSurveyChildDescription(String surveyChildDescription) {
+        this.surveyChildDescription = surveyChildDescription;
     }
 
     /**
-     * @return the _surveyChildCreated
+     * @return the surveyChildCreated
      */
     public String getSurveyChildCreated() {
-        return _surveyChildCreated;
+        return surveyChildCreated;
     }
 
     /**
-     * @param _surveyChildCreated the _surveyChildCreated to set
+     * @param surveyChildCreated the surveyChildCreated to set
      */
-    public void setSurveyChildCreated(String _surveyChildCreated) {
-        this._surveyChildCreated = _surveyChildCreated;
+    public void setSurveyChildCreated(String surveyChildCreated) {
+        this.surveyChildCreated = surveyChildCreated;
     }
 
     /**
-     * @return the _surveyChildModified
+     * @return the surveyChildModified
      */
     public String getSurveyChildModified() {
-        return _surveyChildModified;
+        return surveyChildModified;
     }
 
     /**
-     * @param _surveyChildModified the _surveyChildModified to set
+     * @param surveyChildModified the surveyChildModified to set
      */
-    public void setSurveyChildModified(String _surveyChildModified) {
-        this._surveyChildModified = _surveyChildModified;
+    public void setSurveyChildModified(String surveyChildModified) {
+        this.surveyChildModified = surveyChildModified;
     }
 
     /**
-     * @return the _surveyChildPosition
+     * @return the surveyChildPosition
      */
     public String getSurveyChildPosition() {
-        return _surveyChildPosition;
+        return surveyChildPosition;
     }
 
     /**
-     * @param _surveyChildPosition the _surveyChildPosition to set
+     * @param surveyChildPosition the surveyChildPosition to set
      */
-    public void setSurveyChildPosition(String _surveyChildPosition) {
-        this._surveyChildPosition = _surveyChildPosition;
+    public void setSurveyChildPosition(String surveyChildPosition) {
+        this.surveyChildPosition = surveyChildPosition;
     }
 
     /**
-     * @return the _surveyChildStatus
+     * @return the surveyChildStatus
      */
     public String getSurveyChildStatus() {
-        return _surveyChildStatus;
+        return surveyChildStatus;
     }
 
     /**
-     * @param _surveyChildStatus the _surveyChildStatus to set
+     * @param surveyChildStatus the surveyChildStatus to set
      */
-    public void setSurveyChildStatus(String _surveyChildStatus) {
-        this._surveyChildStatus = _surveyChildStatus;
+    public void setSurveyChildStatus(String surveyChildStatus) {
+        this.surveyChildStatus = surveyChildStatus;
     }
+
+   
 }

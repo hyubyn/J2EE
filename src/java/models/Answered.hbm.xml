@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="models.Answered" table="Answered">
+        <id name="asid" type="integer" column="asid">
+            <generator class="assigned"/>
+        </id>
+        <property name="usid" type="integer">
+            <column name="usid"/>
+        </property>
+        <property name="qid" type="integer">
+            <column name="qid" />
+        </property>
+        <property name="questionParentId" type="integer">
+            <column name="question_parentid"/>
+        </property>
+        <property name="answeredResultId" type="integer">
+            <column name="answered_result_id" />
+        </property>
+        <property name="answeredResultValue" type="string">
+            <column name="answered_result_value"/>
+        </property>
+        <property name="answeredTime" type="datetime">
+            <column name="answered_time" />
+        </property>
+    </class>
+</hibernate-mapping>

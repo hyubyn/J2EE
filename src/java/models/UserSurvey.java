@@ -15,94 +15,96 @@ public class UserSurvey implements java.io.Serializable{
     public UserSurvey(){
     }
     
-    private int _usid;
-    private int _uid;
-    private int _scid;
-    private int _numberQuestions;
-    private int _numberAnswered;
-    private Date _surveyTime;
+    private int usid;
+    private int uid;
+    private int scid;
+    private int numberQuestions;
+    private int numberAnswered;
+    private Date surveyTime;
 
     /**
-     * @return the _usid
+     * @return the usid
      */
     public int getUsid() {
-        return _usid;
+        return usid;
     }
 
     /**
-     * @param _usid the _usid to set
+     * @param usid the usid to set
      */
-    public void setUsid(int _usid) {
-        this._usid = _usid;
+    public void setUsid(int usid) {
+        this.usid = usid;
     }
 
     /**
-     * @return the _uid
+     * @return the uid
      */
     public int getUid() {
-        return _uid;
+        return uid;
     }
 
     /**
-     * @param _uid the _uid to set
+     * @param uid the uid to set
      */
-    public void setUid(int _uid) {
-        this._uid = _uid;
+    public void setUid(int uid) {
+        this.uid = uid;
     }
 
     /**
-     * @return the _scid
+     * @return the scid
      */
     public int getScid() {
-        return _scid;
+        return scid;
     }
 
     /**
-     * @param _scid the _scid to set
+     * @param scid the scid to set
      */
-    public void setScid(int _scid) {
-        this._scid = _scid;
+    public void setScid(int scid) {
+        this.scid = scid;
     }
 
     /**
-     * @return the _numberQuestions
+     * @return the numberQuestions
      */
     public int getNumberQuestions() {
-        return _numberQuestions;
+        return numberQuestions;
     }
 
     /**
-     * @param _numberQuestions the _numberQuestions to set
+     * @param numberQuestions the numberQuestions to set
      */
-    public void setNumberQuestions(int _numberQuestions) {
-        this._numberQuestions = _numberQuestions;
+    public void setNumberQuestions(int numberQuestions) {
+        this.numberQuestions = numberQuestions;
     }
 
     /**
-     * @return the _numberAnswered
+     * @return the numberAnswered
      */
     public int getNumberAnswered() {
-        return _numberAnswered;
+        return numberAnswered;
     }
 
     /**
-     * @param _numberAnswered the _numberAnswered to set
+     * @param numberAnswered the numberAnswered to set
      */
-    public void setNumberAnswered(int _numberAnswered) {
-        this._numberAnswered = _numberAnswered;
+    public void setNumberAnswered(int numberAnswered) {
+        this.numberAnswered = numberAnswered;
     }
 
     /**
-     * @return the _surveyTime
+     * @return the surveyTime
      */
     public Date getSurveyTime() {
-        return _surveyTime;
+        return surveyTime;
     }
 
     /**
-     * @param _surveyTime the _surveyTime to set
+     * @param surveyTime the surveyTime to set
      */
-    public void setSurveyTime(Date _surveyTime) {
-        this._surveyTime = _surveyTime;
+    public void setSurveyTime(Date surveyTime) {
+        this.surveyTime = surveyTime;
     }
+
+  
 }

@@ -15,110 +15,110 @@ public class Answered implements java.io.Serializable{
     public Answered(){
     }
     
-    private int _asid;
-    private int _usid;
-    private int _qid;
-    private int _questionParentId;
-    private int _answeredResultId;
-    private String _answeredResultValue;
-    private Date _answeredTime; 
+    private int asid;
+    private int usid;
+    private int qid;
+    private int questionParentId;
+    private int answeredResultId;
+    private String answeredResultValue;
+    private Date answeredTime; 
 
     /**
-     * @return the _asid
+     * @return the asid
      */
     public int getAsid() {
-        return _asid;
+        return asid;
     }
 
     /**
-     * @param _asid the _asid to set
+     * @param asid the asid to set
      */
-    public void setAsid(int _asid) {
-        this._asid = _asid;
+    public void setAsid(int asid) {
+        this.asid = asid;
     }
 
     /**
-     * @return the _usid
+     * @return the usid
      */
     public int getUsid() {
-        return _usid;
+        return usid;
     }
 
     /**
-     * @param _usid the _usid to set
+     * @param usid the usid to set
      */
-    public void setUsid(int _usid) {
-        this._usid = _usid;
+    public void setUsid(int usid) {
+        this.usid = usid;
     }
 
     /**
-     * @return the _qid
+     * @return the qid
      */
     public int getQid() {
-        return _qid;
+        return qid;
     }
 
     /**
-     * @param _qid the _qid to set
+     * @param qid the qid to set
      */
-    public void setQid(int _qid) {
-        this._qid = _qid;
+    public void setQid(int qid) {
+        this.qid = qid;
     }
 
     /**
-     * @return the _questionParentId
+     * @return the questionParentId
      */
     public int getQuestionParentId() {
-        return _questionParentId;
+        return questionParentId;
     }
 
     /**
-     * @param _questionParentId the _questionParentId to set
+     * @param questionParentId the questionParentId to set
      */
-    public void setQuestionParentId(int _questionParentId) {
-        this._questionParentId = _questionParentId;
+    public void setQuestionParentId(int questionParentId) {
+        this.questionParentId = questionParentId;
     }
 
     /**
-     * @return the _answeredResultId
+     * @return the answeredResultId
      */
     public int getAnsweredResultId() {
-        return _answeredResultId;
+        return answeredResultId;
     }
 
     /**
-     * @param _answeredResultId the _answeredResultId to set
+     * @param answeredResultId the answeredResultId to set
      */
-    public void setAnsweredResultId(int _answeredResultId) {
-        this._answeredResultId = _answeredResultId;
+    public void setAnsweredResultId(int answeredResultId) {
+        this.answeredResultId = answeredResultId;
     }
 
     /**
-     * @return the _answeredResultValue
+     * @return the answeredResultValue
      */
     public String getAnsweredResultValue() {
-        return _answeredResultValue;
+        return answeredResultValue;
     }
 
     /**
-     * @param _answeredResultValue the _answeredResultValue to set
+     * @param answeredResultValue the answeredResultValue to set
      */
-    public void setAnsweredResultValue(String _answeredResultValue) {
-        this._answeredResultValue = _answeredResultValue;
+    public void setAnsweredResultValue(String answeredResultValue) {
+        this.answeredResultValue = answeredResultValue;
     }
 
     /**
-     * @return the _answeredTime
+     * @return the answeredTime
      */
     public Date getAnsweredTime() {
-        return _answeredTime;
+        return answeredTime;
     }
 
     /**
-     * @param _answeredTime the _answeredTime to set
+     * @param answeredTime the answeredTime to set
      */
-    public void setAnsweredTime(Date _answeredTime) {
-        this._answeredTime = _answeredTime;
+    public void setAnsweredTime(Date answeredTime) {
+        this.answeredTime = answeredTime;
     }
 
   

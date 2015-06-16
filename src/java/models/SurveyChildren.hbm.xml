@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="models.SurveyChildren" table="Survey_Children">
+        <id name="scid" type="integer" column="scid">
+            <generator class="assigned"/>
+        </id>
+        <property name="suid" type="integer">
+            <column name="sid"/>
+        </property>
+        <property name="surveyChildName" type="string">
+            <column name="survey_child_name" />
+        </property>
+        <property name="surveyChildDescription" type="string">
+            <column name="survey_child_description"/>
+        </property>
+        <property name="surveyChildCreated" type="string">
+            <column name="survey_child_created" />
+        </property>
+        <property name="surveyChildModified" type="string">
+            <column name="survey_child_modified"/>
+        </property>
+        <property name="surveyChildPosition" type="string">
+            <column name="survey_child_position" />
+        </property>
+        <property name="surveyChildStatus" type="string">
+            <column name="survey_child_status"/>
+        </property>
+    </class>
+</hibernate-mapping>

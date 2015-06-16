@@ -15,49 +15,49 @@ public class Survey implements java.io.Serializable{
     
     }
     
-    private int _sid;
-    private String _surveyName;
-    private String _surveyDescription;
+    private int sid;
+    private String surveyName;
+    private String surveyDescription;
 
     /**
      * @return the _sid
      */
     public int getSid() {
-        return _sid;
+        return sid;
     }
 
     /**
      * @param _sid the _sid to set
      */
     public void setSid(int _sid) {
-        this._sid = _sid;
+        this.sid = _sid;
     }
 
     /**
      * @return the _surveyName
      */
     public String getSurveyName() {
-        return _surveyName;
+        return surveyName;
     }
 
     /**
      * @param _surveyName the _surveyName to set
      */
     public void setSurveyName(String _surveyName) {
-        this._surveyName = _surveyName;
+        this.surveyName = _surveyName;
     }
 
     /**
      * @return the _surveyDescription
      */
     public String getSurveyDescription() {
-        return _surveyDescription;
+        return surveyDescription;
     }
 
     /**
      * @param _surveyDescription the _surveyDescription to set
      */
     public void setSurveyDescription(String _surveyDescription) {
-        this._surveyDescription = _surveyDescription;
+        this.surveyDescription = _surveyDescription;
     }
 }

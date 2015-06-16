@@ -14,79 +14,81 @@ public class Questions implements java.io.Serializable{
     public Questions(){
     }
     
-    private int _qid;
-    private int _scid;
-    private String _questionType;
-    private String _questionName;
-    private String _questionPosition;
+    private int qid;
+    private int scid;
+    private String questionType;
+    private String questionName;
+    private String questionPosition;
 
     /**
-     * @return the _qid
+     * @return the qid
      */
     public int getQid() {
-        return _qid;
+        return qid;
     }
 
     /**
-     * @param _qid the _qid to set
+     * @param qid the qid to set
      */
-    public void setQid(int _qid) {
-        this._qid = _qid;
+    public void setQid(int qid) {
+        this.qid = qid;
     }
 
     /**
-     * @return the _scid
+     * @return the scid
      */
     public int getScid() {
-        return _scid;
+        return scid;
     }
 
     /**
-     * @param _scid the _scid to set
+     * @param scid the scid to set
      */
-    public void setScid(int _scid) {
-        this._scid = _scid;
+    public void setScid(int scid) {
+        this.scid = scid;
     }
 
     /**
-     * @return the _questionType
+     * @return the questionType
      */
     public String getQuestionType() {
-        return _questionType;
+        return questionType;
     }
 
     /**
-     * @param _questionType the _questionType to set
+     * @param questionType the questionType to set
      */
-    public void setQuestionType(String _questionType) {
-        this._questionType = _questionType;
+    public void setQuestionType(String questionType) {
+        this.questionType = questionType;
     }
 
     /**
-     * @return the _questionName
+     * @return the questionName
      */
     public String getQuestionName() {
-        return _questionName;
+        return questionName;
     }
 
     /**
-     * @param _questionName the _questionName to set
+     * @param questionName the questionName to set
      */
-    public void setQuestionName(String _questionName) {
-        this._questionName = _questionName;
+    public void setQuestionName(String questionName) {
+        this.questionName = questionName;
     }
 
     /**
-     * @return the _questionPosition
+     * @return the questionPosition
      */
     public String getQuestionPosition() {
-        return _questionPosition;
+        return questionPosition;
     }
 
     /**
-     * @param _questionPosition the _questionPosition to set
+     * @param questionPosition the questionPosition to set
      */
-    public void setQuestionPosition(String _questionPosition) {
-        this._questionPosition = _questionPosition;
+    public void setQuestionPosition(String questionPosition) {
+        this.questionPosition = questionPosition;
     }
+
+   
 }

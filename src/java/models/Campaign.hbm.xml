@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="models.Campaign" table="Campaign">
+        <id name="cid" type="integer" column="cid">
+            <generator class="assigned"/>
+        </id>
+        <property name="uid" type="integer">
+            <column name="uid"/>
+        </property>
+        <property name="campaignTitle" type="string">
+            <column name="campaign_title" />
+        </property>
+        <property name="postTime" type="datetime">
+            <column name="post_time"/>
+        </property>
+        <property name="startTime" type="datetime">
+            <column name="start_time" />
+        </property>
+        <property name="endTime" type="datetime">
+            <column name="end_time"/>
+        </property>
+        <property name="campaignAge" type="string">
+            <column name="campaign_age" />
+        </property>
+        <property name="campaignGender" type="string">
+            <column name="campaign_gender"/>
+        </property>
+        <property name="campaignLocation" type="string">
+            <column name="campaign_location" />
+        </property>
+    </class>
+</hibernate-mapping>
