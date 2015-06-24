@@ -5,6 +5,13 @@
  */
 package models;
 
+import java.util.List;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
 /**
  *
  * @author NguyenVu
@@ -136,5 +143,134 @@ public class SurveyChildren {
         this.surveyChildStatus = surveyChildStatus;
     }
 
+     /**
+     * Insert Survey Children
+     */
+   public int insertSurveyChildren(){
+        Session session = null;
+        Transaction ta;
+        try {
+            SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+            session = sessionFactory.openSession();
+            ta = session.beginTransaction();
+             String sql = "Select e.scid, e.sid, e.surveyChildName, e.surveyChildDescription,"
+                     + "e.surveyChildCreated, e.surveyChildModified, e.surveyChildPosition"
+                     + "e.surveyChildStatus from "
+                    + SurveyChildren.class.getName() + " e ";
+            Query query = session.createQuery(sql);
+
+          // Thực hiện truy vấn.
+            // Lấy ra danh sách các đối tượng Object[]
+            List<Object[]> datas = query.list();
+            this.sid = Integer.parseInt(datas.get(0)[0].toString());
+            for (int i = 0; i < datas.size(); i++) {
+                int id = Integer.parseInt(datas.get(i)[0].toString());
+                if (this.scid < id) {
+                    this.scid = id;
+                }
+            }
+            this.scid ++;
+            session.save(this);
+            ta.commit();
+            return 1;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            // Rollback trong trường hợp có lỗi xẩy ra.
+            session.getTransaction().rollback();
+            return 0;
+        } finally {
+            session.flush();
+            session.close();
+            return 1;
+        }
+
+    }
+    
+    /**
+     * Get survey children by id
+     */
+    
+    public void getSurveyChildrenById(int id){
+        Session session = null;
+        Transaction ta;
+        try {
+            SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+            session = sessionFactory.openSession();
+            ta = session.beginTransaction();
+            String sql = "Select e.scid, e.sid, e.surveyChildName, e.surveyChildDescription,"
+                     + "e.surveyChildCreated, e.surveyChildModified, e.surveyChildPosition"
+                     + "e.surveyChildStatus from "
+                    + SurveyChildren.class.getName() + " e where e.scid = " + id;
+            Query query = session.createQuery(sql);
+
+          // Thực hiện truy vấn.
+            // Lấy ra danh sách các đối tượng Object[]
+            List<Object[]> datas = query.list();
+
+            for (Object[] emp : datas) {
+                this.scid = Integer.parseInt(emp[0].toString());
+                this.sid = Integer.parseInt(emp[1].toString());
+                this.surveyChildName =  emp[2].toString();
+                this.surveyChildDescription = emp[3].toString();
+                this.surveyChildCreated = emp[4].toString();
+                this.surveyChildModified = emp[5].toString();
+                this.surveyChildPosition =  emp[6].toString();
+                this.surveyChildStatus = emp[7].toString(); 
+            }
+            // Commit dữ liệu
+            ta.commit();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            // Rollback trong trường hợp có lỗi xẩy ra.
+          session.getTransaction().rollback();
+        } finally {
+            session.flush();
+            session.close();
+        }
+    }
+
+    /**
+     * Get survey children by name
+     */
+    
+    public void getSurveyChildByName(String name){
+        Session session = null;
+        Transaction ta;
+        try {
+            SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+            session = sessionFactory.openSession();
+            ta = session.beginTransaction();
+            
+             String sql = "Select e.scid, e.sid, e.surveyChildName, e.surveyChildDescription,"
+                     + "e.surveyChildCreated, e.surveyChildModified, e.surveyChildPosition"
+                     + "e.surveyChildStatus from "
+                    + SurveyChildren.class.getName() + " e where e.surveyChildName = " + name;
+            Query query = session.createQuery(sql);
+
+          // Thực hiện truy vấn.
+            // Lấy ra danh sách các đối tượng Object[]
+            List<Object[]> datas = query.list();
+
+            for (Object[] emp : datas) {
+                 this.scid = Integer.parseInt(emp[0].toString());
+                this.sid = Integer.parseInt(emp[1].toString());
+                this.surveyChildName =  emp[2].toString();
+                this.surveyChildDescription = emp[3].toString();
+                this.surveyChildCreated = emp[4].toString();
+                this.surveyChildModified = emp[5].toString();
+                this.surveyChildPosition =  emp[6].toString();
+                this.surveyChildStatus = emp[7].toString(); 
+            }
+            // Commit dữ liệu
+            ta.commit();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            // Rollback trong trường hợp có lỗi xẩy ra.
+          session.getTransaction().rollback();
+        } finally {
+            session.flush();
+            session.close();
+        }
+    }
    
 }
