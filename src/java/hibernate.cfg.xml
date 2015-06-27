@@ -1,11 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
   <session-factory>
-    <property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property>
-    <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.ClientDriver</property>
-    <property name="hibernate.connection.url">jdbc:derby://localhost:1527/sample</property>
-    <property name="hibernate.connection.username">app</property>
-    <property name="hibernate.connection.password">app</property>
+    <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="hibernate.connection.url">jdbc:sqlserver://localhost\HYUBYN:1433;databaseName=J2EE</property>
+    <property name="hibernate.connection.username">sa</property>
+    <property name="hibernate.connection.password">123456</property>
+    <property name="hibernate.connection.autocommit">false</property>
+    <property name="show_sql">true</property>
+    <property name="format_sql">true</property>
+    <property name="use_sql_comments">true</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+    <!--Mapping file-->
+    <mapping resource="models/Survey.hbm.xml"/>    
+    <mapping resource="models/Answered.hbm.xml"/>    
+    <mapping resource="models/Campaign.hbm.xml"/>    
+    <mapping resource="models/CampaignRating.hbm.xml"/>
+    <mapping resource="models/Questions.hbm.xml"/>    
+    <mapping resource="models/SurveyChildren.hbm.xml"/>
+    <mapping resource="models/User.hbm.xml"/>    
+    <mapping resource="models/UserSurvey.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
+
+
+ 
